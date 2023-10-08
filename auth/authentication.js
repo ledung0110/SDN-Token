@@ -3,7 +3,6 @@ import jwt from 'jsonwebtoken'
 const checkToken = (req, res, next) => {
     // Xác định những request đi qua không cần kiểm tra
     // Bypass: login, register, ....
-    debugger
     if(req.url.toLowerCase() == '/users/login'.toLowerCase() || 
        req.url.toLowerCase() == '/users/register'.toLowerCase()){
         // Chuyển tiếp
